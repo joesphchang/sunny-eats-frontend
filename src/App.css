@@ -1,0 +1,265 @@
+html {
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* @media screen and (min-width: 640px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1280px) {} */
+
+/* Nav.js */
+
+.Nav-Component-Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Nav-Button-Container {
+    display: flex;
+    align-items: center;
+}
+
+.Login {
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    height: 20px;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.Register {
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    height: 20px;
+    background-color: rgb(255, 220, 140);
+    color: white;
+    font-size: 15px;
+}
+
+.Logo {
+    height: 50px;
+}
+
+.Nav-Unordered-List {
+    display: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Hamburger-Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hamburger-icon1,
+.Hamburger-icon2,
+.Hamburger-icon3 {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.Hamburger-icon1animate {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 3px;
+    width: 25px;
+    margin-right: 5px;
+    border-radius: 4px;
+    transform: rotate(-45deg) translate(-1px, -1px);
+    transition: .4s;
+}
+
+.Hamburger-icon2animate {
+    opacity: 0;
+    transition: .4s;
+}
+
+.Hamburger-icon3animate {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 3px;
+    width: 25px;
+    margin-right: 5px;
+    border-radius: 4px;
+    transform: rotate(45deg) translate(-2px, -2px);
+    transition: .4s;
+}
+
+.Hamburger-Menuclicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+}
+
+.Hamburger-Button {
+    border: none;
+    background-color: white;
+}
+
+.Nav-Container {
+    width: 50%;
+    margin-top: 12px;
+    margin-right: 75px;
+}
+
+@media screen and (min-width: 640px) {
+    .Logo {
+        width: 25px;
+        height: max-content;
+    }
+
+    .Login {
+        margin-right: 25px;
+        border: none;
+    }
+
+    .Register {
+        margin-right: 5px;
+        border: none;
+    }
+
+    .Logo {
+        height: 75px;
+        width: max-content;
+    }
+
+    .Login {
+        margin-right: 25px;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        height: 50px;
+        width: 75px;
+        border-radius: 2px;
+        background-color: white;
+        color: black;
+        font-size: 14px;
+    }
+
+    .Register {
+        margin-right: 5px;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        height: 50px;
+        width: 75px;
+        background-color: rgb(255, 220, 140);
+        color: white;
+        font-size: 14px;
+    }
+
+    .Nav-Unordered-List {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .Nav-Unordered-List {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .Login {
+        margin-right: 25px;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        height: 50px;
+        width: 100px;
+        border-radius: 2px;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+    }
+
+    .Register {
+        margin-right: 5px;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        height: 50px;
+        width: 100px;
+        background-color: rgb(255, 220, 140);
+        color: white;
+        font-size: 18px;
+    }
+
+
+    .Nav-Container {
+        width: 50%;
+        margin-top: 16px;
+        margin-right: 75px;
+    }
+
+    .Nav-Button-Container {
+        display: flex;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    /* Use this for flex container of the list */
+    .Nav-Unordered-List {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .Hamburger-Menu {
+        display: none;
+    }
+
+    .Hamburger-icon1,
+    .Hamburger-icon2,
+    .Hamburger-icon3 {
+        display: none;
+    }
+
+    .Hamburger-icon1animate {
+        display: none;
+    }
+
+    .Hamburger-icon2animate {
+        display: none;
+    }
+
+    .Hamburger-icon3animate {
+        display: none;
+    }
+
+    .Hamburger-Menuclicked {
+        display: none;
+    }
+
+    .Hamburger-Button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Nav-Unordered-List {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .Nav-Container {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 1280px) {}
+
+/* Home.js */

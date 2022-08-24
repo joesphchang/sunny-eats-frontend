@@ -1,11 +1,11 @@
 import React from 'react';
 
-function SupriseMe(props) {
+function Home(props) {
     return (
         <div>
-            
+            Homey
         </div>
     );
 }
 
-export default SupriseMe;
+export default Home;
