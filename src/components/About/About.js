@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Register(props) {
+function About(props) {
     return (
         <div>
-            
+            About Page
         </div>
     );
 }
 
-export default Register;
+export default About;
