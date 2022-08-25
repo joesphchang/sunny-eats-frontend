@@ -31,21 +31,6 @@ const close = () => {
                     </li>
                 </ul>
             </nav>
-               <nav className={`Hamburger-Menu${hidden ? 'clicked' : ''}`}>
-        <OutsideClickHandler onOutsideClick={() => {
-            setHidden(false);
-            }}>
-            <button className='Hamburger-Button' onClick={close} type='button'>
-            {hidden ? '' : ''}
-            <div className={`Hamburger-icon1${hidden ? 'animate': ''}`}>   
-            </div>
-            <div className={`Hamburger-icon2${hidden ? 'animate': ''}`}>         
-            </div>
-            <div className={`Hamburger-icon3${hidden ? 'animate': ''}`}>         
-            </div>
-            </button>
-        </OutsideClickHandler>
-        </nav>
             <div className='Nav-Button-Container'>
                 <button className='Register'>
                     Join Free
@@ -55,6 +40,21 @@ const close = () => {
                 </button>
             </div>
         </div>
+        <nav className={`Hamburger-Menu${hidden ? 'clicked' : ''}`}>
+        <OutsideClickHandler onOutsideClick={() => {
+            setHidden(false);
+            }}>
+            <button className='Hamburger-Button' onClick={close} type='button'>
+            {hidden ? '' : ''}
+                <div className={`Hamburger-icon1${hidden ? 'animate': ''}`}>   
+                </div>
+                <div className={`Hamburger-icon2${hidden ? 'animate': ''}`}>         
+                </div>
+                <div className={`Hamburger-icon3${hidden ? 'animate': ''}`}>         
+                </div>
+            </button>
+        </OutsideClickHandler>
+        </nav>
         </>
     );
 }
