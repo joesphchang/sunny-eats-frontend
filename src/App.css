@@ -6,6 +6,47 @@
 
 @media screen and (min-width: 1280px) {} */
 
+/* Nav.js Hamburger Content *FOR MOBILE VIEW* */
+
+.Nav-HamburgerContent {
+    display: none;
+}
+
+.Nav-Links-Hambuger {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.Nav-Links-HambugerLogin {
+    text-decoration: none;
+    color: orange;
+    font-size: 18px;
+}
+
+.Nav-Links-HambugerRegister {
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+}
+
+.Nav-HamburgerContentshow {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 15px;
+}
+
+.Nav-Hambuger-Login {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.Nav-Hambuger-Register {
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
 /* Nav.js */
 .Nav-Component-Container {
     display: flex;
@@ -18,11 +59,13 @@
 }
 
 .Logo {
-    height: 50px;
+    height: 75px;
 }
 
-.Register, .Login {
+.Register,
+.Login {
     text-decoration: none;
+    display: none;
 }
 
 .Nav-Unordered-List {
@@ -42,6 +85,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 12px;
 }
 
 .Hamburger-icon1,
@@ -127,7 +171,8 @@
     flex-direction: column;
 }
 
-.search__button, .search__image  {
+.search__button,
+.search__image {
     height: 50px;
     width: 50px;
 }
@@ -168,7 +213,7 @@
         border-radius: 2px;
         background-color: white;
         color: black;
-        font-size: 14px;
+        font-size: 18px;
         text-align: center;
     }
 
@@ -180,28 +225,36 @@
         width: 75px;
         background-color: rgb(255, 220, 140);
         color: white;
-        font-size: 14px;
+        font-size: 18px;
         text-align: center;
     }
 
     .Nav-Unordered-List {
         font-size: 18px;
         font-weight: 500;
+        margin-left: 40px;
     }
 
 }
 
 @media screen and (min-width: 768px) {
+    .Nav-HamburgerContentshow {
+        display: none;
+    }
+
     .Nav-Unordered-List {
         font-size: 12px;
         font-weight: 500;
     }
 
     .Login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-right: 25px;
         border: none;
         font-family: 'Varela Round', sans-serif;
-        height: 50px;
+        height: 40px;
         width: 100px;
         border-radius: 2px;
         background-color: white;
@@ -210,14 +263,18 @@
     }
 
     .Register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-right: 5px;
         border: none;
         font-family: 'Varela Round', sans-serif;
-        height: 50px;
+        height: 40px;
         width: 100px;
-        background-color: rgb(255, 220, 140);
+        background-color: rgb(255, 210, 105);
         color: white;
         font-size: 18px;
+        border-radius: 5px;
     }
 
 

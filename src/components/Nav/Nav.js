@@ -59,6 +59,32 @@ const close = () => {
 						</Link>
 					</div>
 				</div>
+				<div className={`Nav-HamburgerContent${hidden ? 'Nav-HamburgerContentshow' : ''}`}>
+						<div className='Nav-HamburgerContentshow'>
+						<span className='Nav-Hambuger-Register'>
+						<Link className='Nav-Links-HambugerRegister' to='/register'>
+							Join Free
+						</Link>
+						</span>
+						<span className='Nav-Hambuger-Login'>
+						<Link className='Nav-Links-HambugerLogin' to='/login'>
+							Login
+						</Link>
+						</span>
+						<Link className='Nav-Links-Hambuger' to='/home'>
+							Home
+						</Link>
+						<Link className='Nav-Links-Hambuger' to='/recipes'>
+							Recipes
+						</Link>
+						<Link className='Nav-Links-Hambuger' to='/suprise_me'>
+							Suprise Me
+						</Link>
+						<Link className='Nav-Links-Hambuger' to='/about'>
+							About
+						</Link>
+					</div>
+				</div>
 			</>
 		);
 }
