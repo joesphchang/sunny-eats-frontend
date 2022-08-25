@@ -16,7 +16,7 @@ function Search(props) {
         <div className='search__main-contaniner'>
             <form className='search__form'>
                 <div className='search__label_input'>
-                    <label>Recipe Search</label>
+                    <label className='search__label'>Recipe Search</label>
                     <input type='text' className='search__input' placeholder='Recipes, Ingredients, Trends' /> 
                 </div>
                     <button type='submit' className='search__button'>
