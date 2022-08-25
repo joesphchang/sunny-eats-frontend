@@ -1,26 +1,28 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Nav from './Nav';
-import Home from './Home';
-import Search from './Search';
-import SupriseMe from './SupriseMe';
-import Recipes from './Recipes';
-import About from './About';
+import { Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav/Nav';
+import Home from './components/Home/Home';
+import Search from './components/Search/Search';
+import SupriseMe from './components/SurpriseMe/SupriseMe';
+import Recipes from './components/Recipes/Recipes';
+import About from './components/About/About';
+import Register from './components/Register/Register';
+import Login from './components/Login/Login';
 
 function App() {
-  return (
-    <>
-      <BrowserRouter>
-      <Nav/>
-      <Routes>
-      <Route path='home' element={<><Home></Home><Search></Search></>}></Route>
-      <Route path='suprise-me' element={<><SupriseMe></SupriseMe></>}></Route>
-      <Route path='recipes' element={<><Recipes></Recipes></>}></Route>
-      <Route path='about' element={<><About></About></>}></Route>
-      </Routes>
-      </BrowserRouter>
-    </>
-  );
+	return (
+		<>
+    <Nav />
+			<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/surprise_me' element={<SupriseMe />} />
+					<Route path='/recipes' element={<Recipes />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/register' element={<Register />} />
+					<Route path='/login' element={<Login />} />
+			</Routes>
+		</>
+	);
 }
 
 export default App;
