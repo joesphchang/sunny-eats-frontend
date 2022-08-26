@@ -8,6 +8,7 @@ import Recipes from './components/Recipes/Recipes';
 import About from './components/About/About';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
+import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 					<Route path='/register' element={<Register />} />
 					<Route path='/login' element={<Login />} />
 			</Routes>
+	<Footer />
 		</>
 	);
 }

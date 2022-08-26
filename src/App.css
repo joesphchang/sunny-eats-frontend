@@ -159,6 +159,49 @@
     padding: 10px;
 }
 
+/* Home.js */
+
+.home__main-container {
+    width: 100%;
+}
+
+.home__header { 
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-weight: 300;
+}
+
+.home__unordered-list {
+    width: 90%; 
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.home__listed-items {
+    list-style-type: none;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.home__listed-links {
+    text-decoration: none;
+    color: black;
+}
+
+.home__list-header {
+
+}
+
+.home__list-image {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 640px) {
     .Logo {
         width: 25px;
