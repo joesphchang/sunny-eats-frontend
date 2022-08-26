@@ -168,8 +168,9 @@
 .home__header { 
     width: 92%;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 35px;
     font-weight: 300;
+    font-size: 48px;
 }
 
 .home__unordered-list {
@@ -200,6 +201,35 @@
     width: 350px;
     height: 250px;
     border-radius: 10px;
+}
+
+.home__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.home__footer-header {
+    background-color: #F9DD97;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.home__timer-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.home__timer-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.home__listed-items:hover {
+    box-shadow: rgba(227, 198, 113, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 @media screen and (min-width: 640px) {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Search from '../Search/Search';
+import TimerIcon from '../../Icons/timer-icon.png';
 function Home(props) {
 	const [weeksTop, setWeeksTop] = useState([]);
 
@@ -32,6 +33,15 @@ function Home(props) {
 							<img src={recipes.image} alt={recipes.title} className='home__list-image' />
                             <h3 className='home__list-header'>{recipes.title}</h3>
 							<p>{recipes.description.substring(0, 100)}...</p>
+                            <div className='home__card-footer'>
+                                <h5 className='home__footer-header'>Learn more...</h5>
+                                <div className='home__timer-container'>
+                                    <img className='home__timer-icon' src={TimerIcon} alt='timer-icon' />
+                                    <h5>{recipes.duration} min</h5>  
+                                </div>
+                            </div>
+ 
+
 						</Link>
 					</li>
 				))}
