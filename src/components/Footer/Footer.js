@@ -1,24 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 function Footer() {
-
-  return (
-		<div>
-			<div>
-				<h3>Andrew Kai</h3>
-				<a href='https://github.com/AndrewKalGit'>
+	return (
+		<div className='footer__container'>
+            <h2>Created By</h2>
+			<div className='footer__creator-container'>
+				<h3 className='footer__header'>Andrew Kai</h3>
+				<a
+					href='https://github.com/AndrewKalGit'
+					className='footer__social-icons'>
 					<i class='devicon-github-original colored'></i>
 				</a>
-				<a href='https://www.linkedin.com/in/andrew-kal/'>
+				<a
+					href='https://www.linkedin.com/in/andrew-kal/'
+					className='footer__social-icons'>
 					<i class='devicon-linkedin-plain colored'></i>
 				</a>
 			</div>
-			<div>
-				<h3>Joey Chang</h3>
-				<a href='https://github.com/joesphchang'>
+			<div className='footer__creator-container'>
+				<h3 className='footer__header'>Joey Chang</h3>
+				<a
+					href='https://github.com/joesphchang'
+					className='footer__social-icons'>
 					<i class='devicon-github-original colored'></i>
 				</a>
-				<a href='https://www.linkedin.com/in/joesphchang/'>
+				<a
+					href='https://www.linkedin.com/in/joesphchang/'
+					className='footer__social-icons'>
 					<i class='devicon-linkedin-plain colored'></i>
 				</a>
 			</div>
@@ -26,4 +34,4 @@ function Footer() {
 	);
 }
 
-export default Footer
+export default Footer;
