@@ -9,12 +9,12 @@ function Footer() {
 				<a
 					href='https://github.com/AndrewKalGit'
 					className='footer__social-icons'>
-					<i class='devicon-github-original colored'></i>
+					<i className='devicon-github-original colored'></i>
 				</a>
 				<a
 					href='https://www.linkedin.com/in/andrew-kal/'
 					className='footer__social-icons'>
-					<i class='devicon-linkedin-plain colored'></i>
+					<i className='devicon-linkedin-plain colored'></i>
 				</a>
 			</div>
 			<div className='footer__creator-container'>
@@ -22,12 +22,12 @@ function Footer() {
 				<a
 					href='https://github.com/joesphchang'
 					className='footer__social-icons'>
-					<i class='devicon-github-original colored'></i>
+					<i className='devicon-github-original colored'></i>
 				</a>
 				<a
 					href='https://www.linkedin.com/in/joesphchang/'
 					className='footer__social-icons'>
-					<i class='devicon-linkedin-plain colored'></i>
+					<i className='devicon-linkedin-plain colored'></i>
 				</a>
 			</div>
 		</div>
